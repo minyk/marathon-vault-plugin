@@ -52,18 +52,18 @@ test.doFirst {
 }
 
 ext {
-    scalaVersion = '2.11'
-    scalaLibraryVersion = '2.11.11'
+    scalaVersion = '2.12'
+    scalaLibraryVersion = '2.12.4'
 }
 
 dependencies {
     compileOnly "org.scala-lang:scala-library:${scalaLibraryVersion}"
     compileOnly "org.slf4j:slf4j-api:1.7.10"
-    compileOnly "mesosphere.marathon:plugin-interface_2.11:1.4.5"
+    compileOnly "mesosphere.marathon:plugin-interface_2.12:1.6.322"
 
     compile "com.bettercloud:vault-java-driver:3.0.0"
 
-    testCompile "org.scalatest:scalatest_${scalaVersion}:2.2.5"
+    testCompile "org.scalatest:scalatest_${scalaVersion}:3.0.5"
     testCompile "junit:junit:4.12"
     testCompile 'org.mockito:mockito-core:2.15.0'
     testCompile 'org.asynchttpclient:async-http-client:2.4.0'
